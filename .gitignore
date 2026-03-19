@@ -1,0 +1,11 @@
+.DS_Store
+
+AGENTS.md
+.planning/
+__pycache__/
+.playwright-cli
+
+CLAUDE.md
+.claude/
+
+.playwright-mcp
