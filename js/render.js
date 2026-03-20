@@ -352,6 +352,7 @@ function renderNav(data) {
 
   const sections = [
     "about",
+    "news",
     "research",
     "people",
     "publications",
@@ -394,6 +395,56 @@ function renderNav(data) {
     li.appendChild(anchor);
     nav.appendChild(li);
   }
+}
+
+function renderNewsSection(content) {
+  const node = el("section", { attrs: { id: "news" } });
+  node.appendChild(el("h2", { text: content.title ?? "News" }));
+
+  const feed = el("ul", { className: "news-feed" });
+  const items = Array.isArray(content.items) ? content.items : [];
+
+  for (const item of items) {
+    const li = el("li", { className: "news-item" });
+    const category = isNonEmptyString(item.category)
+      ? item.category.toLowerCase()
+      : "news";
+    li.setAttribute("data-category", category);
+
+    const meta = el("div", { className: "news-meta" });
+    meta.appendChild(
+      el("span", { className: "news-badge", text: category }),
+    );
+    if (isNonEmptyString(item.date)) {
+      meta.appendChild(el("span", { className: "news-date", text: item.date }));
+    }
+    li.appendChild(meta);
+
+    if (isNonEmptyString(item.headline)) {
+      if (isNonEmptyString(item.url)) {
+        const a = el("a", {
+          className: "news-headline news-headline-link",
+          attrs: {
+            href: item.url,
+            target: "_blank",
+            rel: "noopener noreferrer",
+          },
+        });
+        a.innerHTML = parseInlineMarkdown(item.headline);
+        li.appendChild(a);
+      } else {
+        const h = el("p", { className: "news-headline" });
+        h.innerHTML = parseInlineMarkdown(item.headline);
+        li.appendChild(h);
+      }
+    }
+
+    appendMarkdown(li, item.description, "news-description");
+    feed.appendChild(li);
+  }
+
+  node.appendChild(feed);
+  return node;
 }
 
 function renderAboutSection(content) {
@@ -694,6 +745,7 @@ function renderSections(data) {
 
   const renderers = [
     ["about", renderAboutSection],
+    ["news", renderNewsSection],
     ["research", renderResearchSection],
     ["people", renderPeopleSection],
     ["publications", renderPublicationsSection],
