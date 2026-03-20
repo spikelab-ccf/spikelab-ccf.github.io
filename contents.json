@@ -10,7 +10,7 @@
     },
     "hero": {
       "tagline1": "Welcome to SPIKE Lab",
-      "tagline2": "The Epilepsy Research Team at Cleveland Clinic",
+      "tagline2": "Signal Processing for Intelligent Knowledge in Epilepsy",
       "ccLogo": {
         "src": "assets/branding/logos/institution-logo.png",
         "alt": "Partner organization logo"
