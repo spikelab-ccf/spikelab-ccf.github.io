@@ -809,4 +809,56 @@ img {
         margin-left: 0;
         text-align: left;
     }
+
+    .footer-center {
+        position: static;
+        transform: none;
+    }
+}
+
+/* ---------------------------
+   Mobile responsive
+---------------------------- */
+
+/* Hero: allow taglines to wrap once the layout is single-column */
+@media (max-width: 900px) {
+    .hero-tagline-1,
+    .hero-tagline-2 {
+        white-space: normal;
+    }
+}
+
+/* Nav: stack brand + links on two rows; let links scroll if needed */
+@media (max-width: 600px) {
+    .nav-wrapper {
+        flex-wrap: wrap;
+        gap: 6px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+
+    .nav-links {
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        gap: 10px;
+        padding-bottom: 3px;
+    }
+
+    .nav-links > li > a {
+        white-space: nowrap;
+    }
+}
+
+/* Research: stack image above text */
+@media (max-width: 640px) {
+    .research-item {
+        grid-template-columns: 1fr;
+    }
+
+    .research-image {
+        width: 70%;
+        max-width: 220px;
+        margin: 0 auto 8px;
+    }
 }
