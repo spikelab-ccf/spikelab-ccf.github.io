@@ -77,7 +77,6 @@
           {
             "name": "Balu Krishnan, Ph.D.",
             "role": "Principal Investigator",
-            "email": "krishnb@ccf.org",
             "photo": "assets/sections/people/Balu Krishnan.jpg",
             "photoChill": "assets/sections/people/Balu Krishnan chill.jpeg",
             "description": "I'm an Associate Staff member and computational researcher at the Cleveland Clinic Epilepsy Center, where I study brain dynamics and epilepsy using advanced **signal processing** and **machine learning** approaches. My research focuses on analyzing electrophysiological data to identify biomarkers of seizure activity, understand brain network connectivity, and improve diagnosis and treatment for patients with neurological disorders. Outside the lab, I enjoy working out, cooking, and spending time playing with my son.",
@@ -213,7 +212,7 @@
   },
   "contact": {
     "title": "Contact",
-    "body": "We welcome curious students, collaborators, and clinicians interested in epilepsy research.\n\nEmail the **principal investigator** for collaboration ideas, research opportunities, or speaking invitations.",
-    "piEmail": "krishnb@ccf.org"
+    "body": "We welcome curious students, collaborators, and clinicians interested in epilepsy research.\n\nEmail the **lab administrator** for collaboration ideas, research opportunities, or speaking invitations.",
+    "piEmail": "spike-lab@outlook.com"
   }
 }
