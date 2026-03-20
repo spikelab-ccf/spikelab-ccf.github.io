@@ -326,12 +326,20 @@ img {
         width: min(720px, 92vw);
     }
 
+    .hero-visuals {
+        justify-items: center;
+    }
+
     .hero-animation {
         width: min(420px, 90%);
     }
 
     .hero-cc-logo {
         width: 220px;
+    }
+
+    .hero-tagline-1 {
+        font-size: clamp(28px, 7vw, 42px);
     }
 }
 
