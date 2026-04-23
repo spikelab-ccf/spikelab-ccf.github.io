@@ -116,11 +116,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (!track || slides.length === 0) return;
 
+        // Reset if already initialized (to prevent multiple intervals)
+        if (track.dataset.initialized) return;
+        track.dataset.initialized = "true";
+
         let currentIndex = 0;
         let autoSlideInterval;
 
         const updateCarousel = (index) => {
             currentIndex = (index + slides.length) % slides.length;
+            // The percentage move is relative to the track's width.
+            // Since each slide is 100% of the viewport and track is 100% width, 
+            // 100% move is exactly one slide width.
             track.style.transform = `translateX(-${currentIndex * 100}%)`;
 
             // Update thumbnails
@@ -133,14 +140,13 @@ document.addEventListener("DOMContentLoaded", () => {
             stopAutoSlide();
             autoSlideInterval = setInterval(() => {
                 updateCarousel(currentIndex + 1);
-            }, 5000); // Slide every 5 seconds
+            }, 5000);
         };
 
         const stopAutoSlide = () => {
             if (autoSlideInterval) clearInterval(autoSlideInterval);
         };
 
-        // Event Listeners
         prevBtn?.addEventListener("click", () => {
             updateCarousel(currentIndex - 1);
             startAutoSlide();
@@ -158,20 +164,18 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         });
 
-        // Pause on hover
         track.addEventListener("mouseenter", stopAutoSlide);
         track.addEventListener("mouseleave", startAutoSlide);
 
-        // Initialize
         updateCarousel(0);
         startAutoSlide();
     };
 
-    // Since sections are rendered dynamically, we need to wait or observe
-    const observer = new MutationObserver((mutations) => {
+    // Check immediately and also observe for dynamic rendering
+    initCarousel();
+    const observer = new MutationObserver(() => {
         if (document.querySelector(".carousel-track")) {
             initCarousel();
-            observer.disconnect();
         }
     });
     observer.observe(document.body, { childList: true, subtree: true });
