@@ -689,15 +689,18 @@ function renderPhotosSection(content) {
     },
   });
   node.appendChild(el("h2", { text: content.title ?? "Photos" }));
-  const grid = el("div", { attrs: { id: "photos-grid" } });
+
+  const carousel = el("div", { className: "carousel" });
+
+  const viewport = el("div", { className: "carousel-viewport" });
+  const track = el("div", { className: "carousel-track" });
 
   const items = Array.isArray(content.items) ? content.items : [];
   items.forEach((item, index) => {
-    const figure = el("figure", { className: "photo-card" });
+    const slide = el("div", { className: "carousel-slide" });
     if (isNonEmptyString(item.image)) {
-      figure.appendChild(
+      slide.appendChild(
         el("img", {
-          className: "photo-image",
           attrs: {
             src: resolvePath(item.image),
             alt: item.alt ?? `Photo ${index + 1}`,
@@ -706,10 +709,43 @@ function renderPhotosSection(content) {
         }),
       );
     }
-    grid.appendChild(figure);
+    track.appendChild(slide);
   });
 
-  node.appendChild(grid);
+  viewport.appendChild(track);
+
+  const prevBtn = el("button", {
+    className: "carousel-arrow prev",
+    attrs: { "aria-label": "Previous photo" },
+  });
+  prevBtn.innerHTML = "&#10094;";
+  const nextBtn = el("button", {
+    className: "carousel-arrow next",
+    attrs: { "aria-label": "Next photo" },
+  });
+  nextBtn.innerHTML = "&#10095;";
+
+  carousel.appendChild(viewport);
+  carousel.appendChild(prevBtn);
+  carousel.appendChild(nextBtn);
+
+  const thumbs = el("div", { className: "carousel-thumbs" });
+  items.forEach((item, index) => {
+    const thumb = el("img", {
+      className: "carousel-thumb",
+      attrs: {
+        src: resolvePath(item.image),
+        alt: `Thumbnail ${index + 1}`,
+        "data-index": String(index),
+        loading: "lazy",
+      },
+    });
+    thumbs.appendChild(thumb);
+  });
+
+  node.appendChild(carousel);
+  node.appendChild(thumbs);
+
   return node;
 }
 

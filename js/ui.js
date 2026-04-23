@@ -103,4 +103,76 @@ document.addEventListener("DOMContentLoaded", () => {
         if (nearTop) header.classList.add("is-peek");
         else header.classList.remove("is-peek");
     });
+
+    // -----------------------------
+    // Carousel Logic
+    // -----------------------------
+    const initCarousel = () => {
+        const track = document.querySelector(".carousel-track");
+        const slides = document.querySelectorAll(".carousel-slide");
+        const prevBtn = document.querySelector(".carousel-arrow.prev");
+        const nextBtn = document.querySelector(".carousel-arrow.next");
+        const thumbs = document.querySelectorAll(".carousel-thumb");
+
+        if (!track || slides.length === 0) return;
+
+        let currentIndex = 0;
+        let autoSlideInterval;
+
+        const updateCarousel = (index) => {
+            currentIndex = (index + slides.length) % slides.length;
+            track.style.transform = `translateX(-${currentIndex * 100}%)`;
+
+            // Update thumbnails
+            thumbs.forEach((thumb, i) => {
+                thumb.classList.toggle("is-active", i === currentIndex);
+            });
+        };
+
+        const startAutoSlide = () => {
+            stopAutoSlide();
+            autoSlideInterval = setInterval(() => {
+                updateCarousel(currentIndex + 1);
+            }, 5000); // Slide every 5 seconds
+        };
+
+        const stopAutoSlide = () => {
+            if (autoSlideInterval) clearInterval(autoSlideInterval);
+        };
+
+        // Event Listeners
+        prevBtn?.addEventListener("click", () => {
+            updateCarousel(currentIndex - 1);
+            startAutoSlide();
+        });
+
+        nextBtn?.addEventListener("click", () => {
+            updateCarousel(currentIndex + 1);
+            startAutoSlide();
+        });
+
+        thumbs.forEach((thumb, i) => {
+            thumb.addEventListener("click", () => {
+                updateCarousel(i);
+                startAutoSlide();
+            });
+        });
+
+        // Pause on hover
+        track.addEventListener("mouseenter", stopAutoSlide);
+        track.addEventListener("mouseleave", startAutoSlide);
+
+        // Initialize
+        updateCarousel(0);
+        startAutoSlide();
+    };
+
+    // Since sections are rendered dynamically, we need to wait or observe
+    const observer = new MutationObserver((mutations) => {
+        if (document.querySelector(".carousel-track")) {
+            initCarousel();
+            observer.disconnect();
+        }
+    });
+    observer.observe(document.body, { childList: true, subtree: true });
 });
