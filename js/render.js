@@ -657,17 +657,16 @@ function renderPublicationsSection(content) {
     for (const item of group.items ?? []) {
       const li = el("li", { className: "pub-item" });
       if (isNonEmptyString(item.url)) {
-        li.appendChild(
-          el("a", {
-            className: "pub-link",
-            text: item.text ?? "",
-            attrs: {
-              href: item.url,
-              target: "_blank",
-              rel: "noopener noreferrer",
-            },
-          }),
-        );
+        const anchor = el("a", {
+          className: "pub-link",
+          attrs: {
+            href: item.url,
+            target: "_blank",
+            rel: "noopener noreferrer",
+          },
+        });
+        anchor.innerHTML = parseInlineMarkdown(item.text ?? "");
+        li.appendChild(anchor);
       } else if (isNonEmptyString(item.text)) {
         li.innerHTML = markdownToHtml(item.text);
       }
