@@ -115,11 +115,11 @@
                                                           "role":  "Principal Investigator",
                                                           "photo":  "assets/sections/people/Balu Krishnan.jpg",
                                                           "photoChill":  "assets/sections/people/Balu Krishnan chill.jpeg",
-                                                          "description":  "I\u0027m an Associate Staff member and computational researcher at the Cleveland Clinic Epilepsy Center, where I study brain dynamics and epilepsy using advanced signal processing and machine learning approaches. My research focuses on analyzing electrophysiological data to identify biomarkers of seizure activity, understand brain network connectivity, and improve diagnosis and treatment for patients with neurological disorders. Outside the lab, I enjoy working out, cooking, and spending time playing with my son.",
+                                                          "description":  "I'm an Associate Staff member and computational researcher at the Cleveland Clinic Epilepsy Center, where I study brain dynamics and epilepsy using advanced signal processing and machine learning approaches. My research focuses on analyzing electrophysiological data to identify biomarkers of seizure activity, understand brain network connectivity, and improve diagnosis and treatment for patients with neurological disorders. Outside the lab, I enjoy working out, cooking, and spending time playing with my son.",
                                                           "links":  {
                                                                         "linkedin":  "https://www.linkedin.com/in/balukrishnan/",
                                                                         "orcid":  "https://orcid.org/0000-0002-1897-3359",
-                                                                        "scholar":  "https://scholar.google.com/citations?user=e9PG7noAAAAJ\u0026hl=en\u0026oi=ao"
+                                                                        "scholar":  "https://scholar.google.com/citations?user=e9PG7noAAAAJ&hl=en&oi=ao"
                                                                     }
                                                       }
                                                   ]
@@ -132,7 +132,7 @@
                                                           "role":  "Postdoctoral Fellow",
                                                           "photo":  "assets/sections/people/Himanshu Kumar.jpeg",
                                                           "photoChill":  "assets/sections/people/Himanshi Kumar chill.jpeg",
-                                                          "description":  "I\u0027m a Postdoctoral Fellow at Cleveland Clinic working at the intersection of neuroscience, signal processing, and machine learning. My research aims to decode brain dynamics from neural recordings to develop computational biomarkers for epilepsy. In my free time, I enjoy cooking, playing basketball, and traveling.",
+                                                          "description":  "I'm a Postdoctoral Fellow at Cleveland Clinic working at the intersection of neuroscience, signal processing, and machine learning. My research aims to decode brain dynamics from neural recordings to develop computational biomarkers for epilepsy. In my free time, I enjoy cooking, playing basketball, and traveling.",
                                                           "links":  {
                                                                         "website":  "https://himsriv24.github.io/",
                                                                         "linkedin":  "https://www.linkedin.com/in/himanshu-kumar-ph-d-ba2298a7/",
@@ -147,12 +147,12 @@
                                                           "role":  "Postdoctoral Fellow",
                                                           "photo":  "assets/sections/people/Guhan Seshadri.jpg",
                                                           "photoChill":  "assets/sections/people/Guhan Seshadri chill.jpg",
-                                                          "description":  "I\u0027m a Postdoctoral Researcher at the Neurological Institute, Cleveland Clinic. My research focuses on large-scale brain network organization in epilepsy using MEG/EEG to identify abnormal functional communities in interictal recordings and understand how epileptogenic networks persist outside seizures. Outside the lab, I enjoy watching movies, exploring new places, and playing table tennis and pickleball.",
+                                                          "description":  "I'm a Postdoctoral Researcher at the Neurological Institute, Cleveland Clinic. My research focuses on large-scale brain network organization in epilepsy using MEG/EEG to identify abnormal functional communities in interictal recordings and understand how epileptogenic networks persist outside seizures. Outside the lab, I enjoy watching movies, exploring new places, and playing table tennis and pickleball.",
                                                           "links":  {
                                                                         "website":  "https://guhanseshadri.github.io/",
                                                                         "linkedin":  "https://www.linkedin.com/in/guhan-seshadri-n-p-1355505b/",
                                                                         "orcid":  "https://orcid.org/0000-0002-7506-9104",
-                                                                        "scholar":  "https://scholar.google.com/citations?user=YSBDHyMAAAAJ\u0026hl=en",
+                                                                        "scholar":  "https://scholar.google.com/citations?user=YSBDHyMAAAAJ&hl=en",
                                                                         "github":  "https://github.com/guhanseshadri"
                                                                     }
                                                       }
@@ -167,12 +167,12 @@
                                                           "affiliation":  "Cleveland State University",
                                                           "photo":  "assets/sections/people/Hanu Banappa.jpg",
                                                           "photoChill":  "assets/sections/people/Hanu Banappa chill.jpg",
-                                                          "description":  "I\u0027m a Ph.D. student in Electrical Engineering at Cleveland State University. My research focuses on the cross-junction of neural signal processing, control theory, and machine learning to understand clinically relevant neural dynamics. I\u0027m particularly interested in developing feedback-driven neuromodulation strategies and closed-loop brain-computer interfaces. Outside the lab, I enjoy pick-up sports, dance battles, and trail adventures.",
+                                                          "description":  "I'm a Ph.D. student in Electrical Engineering at Cleveland State University. My research focuses on the cross-junction of neural signal processing, control theory, and machine learning to understand clinically relevant neural dynamics. I'm particularly interested in developing feedback-driven neuromodulation strategies and closed-loop brain-computer interfaces. Outside the lab, I enjoy pick-up sports, dance battles, and trail adventures.",
                                                           "links":  {
                                                                         "website":  "https://hanuskanda-b.github.io/",
                                                                         "linkedin":  "https://www.linkedin.com/in/hanu-skanda-banappa/",
                                                                         "orcid":  "https://orcid.org/0000-0002-4451-7103",
-                                                                        "scholar":  "https://scholar.google.com/citations?user=9FVerscAAAAJ\u0026hl=en\u0026inst=8024913450255880209",
+                                                                        "scholar":  "https://scholar.google.com/citations?user=9FVerscAAAAJ&hl=en&inst=8024913450255880209",
                                                                         "github":  "https://github.com/HanuSkanda-B"
                                                                     }
                                                       }
@@ -244,14 +244,80 @@
                                            ]
                                        },
                                        {
+                                           "year": 2025,
+                                           "items": [
+                                               {
+                                                   "text": "Gula J, Slegers RJ, Van Hoof RHM, Krishnan B, Massimo M, et al. **The impact of radiofrequency thermocoagulation on brain connectivity in drug-resistant epilepsy: Insights from stereo-electroencephalography and cortico-cortical evoked potentials.** *Epilepsia*, 2025.",
+                                                   "url": "https://onlinelibrary.wiley.com/journal/15281167"
+                                               }
+                                           ]
+                                       },
+                                       {
+                                           "year": 2024,
+                                           "items": [
+                                               {
+                                                   "text": "Krishnan B, Tousseyn S, Taylor K, Wu G, Serletis D, Najm I, Bulacio J, Alexopoulos AV. **Measurable transitions during seizures in intracranial EEG: A stereoelectroencephalography and SPECT study.** *Clinical Neurophysiology*, 161:84-93, 2024.",
+                                                   "url": "https://pubmed.ncbi.nlm.nih.gov/38430752/"
+                                               },
+                                               {
+                                                   "text": "Kobayashi K, Taylor KN, Shahabi H, Krishnan B, Joshi A, et al. **Effective connectivity relates seizure outcome to electrode placement in responsive neurostimulation.** *Brain Communications*, 6(2):fcae041, 2024.",
+                                                   "url": "https://academic.oup.com/braincomms/article/6/2/fcae041/7604359"
+                                               }
+                                           ]
+                                       },
+                                       {
+                                           "year": 2023,
+                                           "items": [
+                                               {
+                                                   "text": "Krishnan B, Tousseyn S, Wang ZI, Murakami H, Wu G, et al. **Novel noninvasive identification of patient-specific epileptic networks in focal epilepsies: Linking SPECT perfusion during seizures with resting-state MEG dynamics.** *Human Brain Mapping*, 44(8):3198-3211, 2023.",
+                                                   "url": "https://pubmed.ncbi.nlm.nih.gov/36946024/"
+                                               },
+                                               {
+                                                   "text": "Tang Y, Blümcke I, Su TY, Choi JY, Krishnan B, et al. **The Black Line Sign in Focal Cortical Dysplasia IIB: a 7T MRI and Electro-clinico-pathological Study.** *Neurology*, 101(11):e1112-e1124, 2023.",
+                                                   "url": "https://pubmed.ncbi.nlm.nih.gov/37407255/"
+                                               }
+                                           ]
+                                       },
+                                       {
+                                           "year": 2022,
+                                           "items": [
+                                               {
+                                                   "text": "Choi JY, Krishnan B, Hu S, Martinez D, Tang Y, et al. **Using magnetic resonance fingerprinting to characterize periventricular nodular heterotopias in pharmacoresistant epilepsy.** *Epilepsia*, 63(10):2580-2591, 2022.",
+                                                   "url": "https://pubmed.ncbi.nlm.nih.gov/35811440/"
+                                               }
+                                           ]
+                                       },
+                                       {
+                                           "year": 2021,
+                                           "items": [
+                                               {
+                                                   "text": "Krishnan B, Tousseyn S, Nayak CS, Aung T, Kheder A, et al. **Neurovascular networks in epilepsy: Correlating ictal blood perfusion with intracranial electrophysiology.** *NeuroImage*, 244:118555, 2021.",
+                                                   "url": "https://pubmed.ncbi.nlm.nih.gov/34537367/"
+                                               }
+                                           ]
+                                       },
+                                       {
+                                           "year": 2020,
+                                           "items": [
+                                               {
+                                                   "text": "Nair DR, Laxer KD, Weber PB, Murro AM, Park YD, et al. **Nine-year prospective efficacy and safety of brain-responsive neurostimulation for focal epilepsy.** *Neurology*, 95(9):e1244-e1256, 2020.",
+                                                   "url": "https://pubmed.ncbi.nlm.nih.gov/32690786/"
+                                               },
+                                               {
+                                                   "text": "Wang ZI, Oh S, Blümcke I, Coras R, Krishnan B, et al. **Value of 7T MRI and post-processing in patients with nonlesional 3T MRI undergoing epilepsy presurgical evaluation.** *Epilepsia*, 61(11):2509-2520, 2020.",
+                                                   "url": "https://pubmed.ncbi.nlm.nih.gov/33043440/"
+                                               }
+                                           ]
+                                       },
+                                       {
                                            "year": 2019,
                                            "items": [
                                                {
-                                                   "text": "Liao C, Wang K, **Krishnan B**, et al. **Development of high-resolution 3D MR fingerprinting for detection and characterization of epileptic lesions.** *Journal of Magnetic Resonance Imaging*, 49(1):249-262, 2019.",
+                                                   "text": "Liao C, Wang K, Krishnan B, et al. **Development of high-resolution 3D MR fingerprinting for detection and characterization of epileptic lesions.** *Journal of Magnetic Resonance Imaging*, 49(1):249-262, 2019.",
                                                    "url": "https://onlinelibrary.wiley.com/doi/abs/10.1002/jmri.26194"
                                                },
                                                {
-                                                   "text": "Covert IC, **Krishnan B**, et al. **Temporal graph convolutional networks for automatic seizure detection.** *Machine Learning for Healthcare Conference*, 2019.",
+                                                   "text": "Covert IC, Krishnan B, et al. **Temporal graph convolutional networks for automatic seizure detection.** *Machine Learning for Healthcare Conference*, 2019.",
                                                    "url": "https://proceedings.mlr.press/v106/covert19a.html"
                                                }
                                            ]
@@ -260,7 +326,7 @@
                                            "year": 2016,
                                            "items": [
                                                {
-                                                   "text": "**Krishnan B**, et al. **Correlating magnetoencephalography to stereo-electroencephalography in patients undergoing epilepsy surgery.** *Brain*, 139(2):e11, 2016.",
+                                                   "text": "Krishnan B, et al. **Correlating magnetoencephalography to stereo-electroencephalography in patients undergoing epilepsy surgery.** *Brain*, 139(2):e11, 2016.",
                                                    "url": "https://academic.oup.com/brain/article/139/2/e11/2464303"
                                                }
                                            ]
@@ -269,7 +335,7 @@
                                            "year": 2015,
                                            "items": [
                                                {
-                                                   "text": "**Krishnan B**, et al. **Epileptic focus localization based on resting state interictal MEG recordings is feasible irrespective of the presence or absence of spikes.** *Clinical Neurophysiology*, 126(4):651-656, 2015.",
+                                                   "text": "Krishnan B, et al. **Epileptic focus localization based on resting state interictal MEG recordings is feasible irrespective of the presence or absence of spikes.** *Clinical Neurophysiology*, 126(4):651-656, 2015.",
                                                    "url": "https://pubmed.ncbi.nlm.nih.gov/25151596/"
                                                }
                                            ]
@@ -278,7 +344,7 @@
                                            "year": 2013,
                                            "items": [
                                                {
-                                                   "text": "**Krishnan B**, et al. **Localization of the ictal onset zone with MEG using minimum norm estimate of a narrow band at seizure onset.** *Clinical Neurophysiology*, 124(8):1501-1508, 2013.",
+                                                   "text": "Krishnan B, et al. **Localization of the ictal onset zone with MEG using minimum norm estimate of a narrow band at seizure onset.** *Clinical Neurophysiology*, 124(8):1501-1508, 2013.",
                                                    "url": "https://pubmed.ncbi.nlm.nih.gov/23507004/"
                                                }
                                            ]
