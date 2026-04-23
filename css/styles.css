@@ -754,10 +754,10 @@ img {
 /* Thumbnails */
 .carousel-thumbs {
     display: flex;
+    justify-content: center; /* Center-align thumbnails */
+    flex-wrap: wrap; /* Allow wrapping if there are many photos */
     gap: 8px;
-    overflow-x: auto;
     padding: 8px 0;
-    scrollbar-width: thin;
 }
 
 .carousel-thumb {
