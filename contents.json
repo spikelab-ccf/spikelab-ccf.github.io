@@ -79,6 +79,13 @@
                  "items":  [
                      {
                          "date":  "May 2026",
+                         "category":  "Award",
+                         "headline":  "Hanu Skanda Banappa Wins 1st Place Graduate Student Research Award at NERD 2026",
+                         "description":  "PhD student Hanu Skanda Banappa was awarded 1st place in the Graduate Student Research Award category at Cleveland Clinic Neurological Education & Research Day (NERD) for the poster **\"Dynamics of Invariant Network Structure During Seizure Onset and Propagation\"**.",
+                         "url":  "nerd-2026.html"
+                     },
+                     {
+                         "date":  "May 2026",
                          "category":  "Paper",
                          "headline":  "Paper Accepted in Epilepsia",
                          "description":  "Our manuscript titled **\"Presurgical Magnetoencephalography Derived Network Control Metrics Distinguish Successful Hippocampal Resection versus Sparing in Temporal Lobe Epilepsy\"** has been accepted in *Epilepsia*. The work is authored by Seshadri, Kumar, John, Alexopoulos, Burgess, Murakami, and Krishnan."
