@@ -78,18 +78,19 @@
                  "title":  "News",
                  "items":  [
                      {
+                         "date":  "June 2026",
+                         "category":  "Paper",
+                         "headline":  "Presurgical Magnetoencephalography Derived Network Control Metrics Distinguish Successful Hippocampal Resection versus Sparing in Temporal Lobe Epilepsy",
+                         "description":  "Seshadri N P et al. - Accepted in *Epilepsia*, 2026",
+                         "url": "https://onlinelibrary.wiley.com/doi/10.1002/epi.70320"
+                     },
+                     {
                          "date":  "May 2026",
                          "category":  "Award",
                          "headline":  "Hanu Skanda Banappa Wins 1st Place Graduate Student Research Award at NERD 2026",
                          "description":  "PhD student Hanu Skanda Banappa was awarded 1st place in the **Graduate Student Research Award** category at Cleveland Clinic Neurological Education & Research Day (NERD 2026) for the poster **\"Dynamics of Invariant Network Structure During Seizure Onset and Propagation\"**.",
                          "url":  "nerd-2026.html"
-                     },
-                     {
-                         "date":  "May 2026",
-                         "category":  "Paper",
-                         "headline":  "Paper Accepted in Epilepsia",
-                         "description":  "Our manuscript titled **\"Presurgical Magnetoencephalography Derived Network Control Metrics Distinguish Successful Hippocampal Resection versus Sparing in Temporal Lobe Epilepsy\"** has been accepted in *Epilepsia*. The work is authored by Seshadri, Kumar, John, Alexopoulos, Burgess, Murakami, and Krishnan."
-                     },
+                     },                     
                      {
                          "date":  "April 2026",
                          "category":  "Paper",
@@ -246,6 +247,10 @@
                                        {
                                            "year": 2026,
                                            "items": [
+                                               {
+                                                   "text": "Guhan Seshadri NP, Himanshu Kumar, Neha Sara John, Andreas V. Alexopoulos, Richard C. Burgess, Hiroatsu Murakami & Balu Krishnan. Presurgical magnetoencephalography-derived network control metrics distinguish successful hippocampal resection vs sparing in temporal lobe epilepsy. *Epilepsia, 1-14*, 2026.",
+                                                    "url": "https://onlinelibrary.wiley.com/doi/10.1002/epi.70320"
+                                               },
                                                {
                                                    "text": "HS Banappa, T Moura, D Serletis, AV Alexopoulos, JC Bulacio, ... Directional connectivity patterns in SEEG recorded epileptiform transitions in mesial temporal lobe epilepsy. *Journal of Neural Engineering*, 2026."
                                                },
