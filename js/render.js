@@ -640,12 +640,19 @@ function renderPeopleSection(content) {
   return node;
 }
 
-function renderPublicationsSection(content) {
+function renderPublicationsSection(content, options = {}) {
+  const preview = options.preview === true;
   const node = el("section", { attrs: { id: "publications" } });
   node.appendChild(el("h2", { text: content.title ?? "Publications" }));
   const container = el("div", { attrs: { id: "publications-list" } });
 
-  for (const group of content.groups ?? []) {
+  const allGroups = Array.isArray(content.groups) ? content.groups : [];
+  const previewCount = Number(content.previewCount);
+  const limited =
+    preview && Number.isFinite(previewCount) && previewCount > 0;
+  const groups = limited ? allGroups.slice(0, previewCount) : allGroups;
+
+  for (const group of groups) {
     const yearWrap = el("section", { className: "pub-year" });
     if (group.year != null && group.year !== "") {
       yearWrap.appendChild(
@@ -678,6 +685,19 @@ function renderPublicationsSection(content) {
   }
 
   node.appendChild(container);
+
+  if (limited && allGroups.length > previewCount) {
+    const moreWrap = el("div", { className: "pub-more" });
+    moreWrap.appendChild(
+      el("a", {
+        className: "pub-more-link",
+        text: "See all publications →",
+        attrs: { href: content.moreUrl || "publications.html" },
+      }),
+    );
+    node.appendChild(moreWrap);
+  }
+
   return node;
 }
 
@@ -851,22 +871,40 @@ function renderSections(data) {
   for (const [key, renderer] of renderers) {
     const content = data[key];
     if (!content) continue;
-    const node = renderer(content);
+    const node =
+      key === "publications"
+        ? renderer(content, { preview: true })
+        : renderer(content);
     if (node) root.appendChild(node);
   }
+}
+
+function renderPublicationsPage(data) {
+  const root = $("publications-page-root");
+  if (!root) return false;
+  clearChildren(root);
+  const content = data.publications;
+  if (content) {
+    root.appendChild(renderPublicationsSection(content, { preview: false }));
+  }
+  return true;
 }
 
 async function main() {
   try {
     const data = await loadJSON("contents.json");
     renderFavicon(data.site);
-    renderMeta(data.site);
     renderHeader(data.site);
+    renderFooter(data.site);
+
+    // Standalone publications page: render only the full publications list.
+    if (renderPublicationsPage(data)) return;
+
+    renderMeta(data.site);
     renderHero(data.site);
     renderMainBackground(data.site);
     renderNav(data);
     renderSections(data);
-    renderFooter(data.site);
   } catch (err) {
     console.error(err);
     document.body.insertAdjacentHTML(

@@ -243,6 +243,8 @@
                },
     "publications":  {
                          "title":  "Publications",
+                         "previewCount":  2,
+                         "moreUrl":  "publications.html",
                          "groups":  [
                                        {
                                            "year": 2026,

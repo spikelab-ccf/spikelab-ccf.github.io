@@ -696,6 +696,21 @@ img {
     text-decoration: underline;
 }
 
+.pub-more {
+    margin-top: 16px;
+    padding-left: 18px;
+}
+
+.pub-more-link {
+    color: var(--link);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.pub-more-link:hover {
+    text-decoration: underline;
+}
+
 /* ---------------------------
    Carousel (Photos)
 ---------------------------- */
