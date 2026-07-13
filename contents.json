@@ -210,6 +210,18 @@
                                                                         "linkedin":  "https://www.linkedin.com/in/madelyn-manley-534b49347/",
                                                                         "github":  "https://github.com/madelyng2007"
                                                                     }
+                                                      },
+                                                      {
+                                                          "name":  "Snehan Mukherjee",
+                                                          "role":  "Research Intern",
+                                                          "email":  "mukherjee.268@buckeyemail.osu.edu",
+                                                          "affiliation":  "The Ohio State University",
+                                                          "photo":  "assets/sections/people/Snehan Mukherjee.jpg",
+                                                          "photoChill":  "assets/sections/people/Snehan Mukherjee chill.jpg",
+                                                          "links":  {
+                                                                        "linkedin":  "http://www.linkedin.com/in/snehan-mukherjee-498542282",
+                                                                        "github":  "https://github.com/SnehanMukherjee"
+                                                                    }
                                                       }
                                                       
                                                   ]
