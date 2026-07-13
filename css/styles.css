@@ -1026,6 +1026,7 @@ img {
 .news-item[data-category="talk"]::before   { --news-accent: #7c3aed; }
 .news-item[data-category="award"]::before  { --news-accent: #d97706; }
 .news-item[data-category="grant"]::before  { --news-accent: #16a34a; }
+.news-item[data-category="achievement"]::before { --news-accent: hsl(321, 71%, 45%); }
 .news-item[data-category="news"]::before   { --news-accent: #64748b; }
 
 .news-meta {
@@ -1051,6 +1052,7 @@ img {
 .news-item[data-category="talk"]   .news-badge { background: #7c3aed; }
 .news-item[data-category="award"]  .news-badge { background: #d97706; }
 .news-item[data-category="grant"]  .news-badge { background: #16a34a; }
+.news-item[data-category="achievement"] .news-badge { background: hsl(321, 71%, 45%); }
 .news-item[data-category="news"]   .news-badge { background: #64748b; }
 
 .news-date {
