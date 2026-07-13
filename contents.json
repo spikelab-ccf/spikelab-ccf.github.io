@@ -193,7 +193,7 @@
                                                   ]
                                   },
                                   {
-                                      "groupTitle":  "Undergraduate Students",
+                                      "groupTitle":  "Fellows",
                                       "members":  [
                                                       {
                                                           "name":  "HyangMok Baek",
@@ -207,7 +207,20 @@
                                                                         "orcid":  "https://orcid.org/0009-0007-7585-3867",
                                                                         "github":  "https://github.com/57baek"
                                                                     }
+                                                      },
+                                                      {
+                                                          "name":  "Madelyn Manley",
+                                                          "role":  "Research Intern",
+                                                          "email":  "manleymg@miamioh.edu",
+                                                          "affiliation":  "Miami University",
+                                                          "photo":  "assets/sections/people/Madelyn Manley.jpeg",
+                                                          "photoChill":  "assets/sections/people/Madelyn Manley chill.jpg",
+                                                          "links":  {
+                                                                        "linkedin":  "https://www.linkedin.com/in/madelyn-manley-534b49347/",
+                                                                        "github":  "https://github.com/madelyng2007"
+                                                                    }
                                                       }
+                                                      
                                                   ]
                                   },
                                   {
