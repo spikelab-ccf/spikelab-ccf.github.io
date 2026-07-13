@@ -78,6 +78,12 @@
                  "title":  "News",
                  "items":  [
                      {
+                         "date":  "July 2026",
+                         "category":  "Announcement",
+                         "headline":  "Himanshu Kumar Joins IIT Indore as Assistant Professor",
+                         "description":  "Congratulations to **Dr. Himanshu Kumar**, former postdoctoral fellow at SPIKE Lab, on joining the **Mehta Family School of Biosciences and Biomedical Engineering** at the **Indian Institute of Technology (IIT) Indore** as an **Assistant Professor**. We are proud of his achievement and wish him the very best in his new role and future endeavors."
+                     },
+                     {
                          "date":  "June 2026",
                          "category":  "Paper",
                          "headline":  "Presurgical Magnetoencephalography Derived Network Control Metrics Distinguish Successful Hippocampal Resection versus Sparing in Temporal Lobe Epilepsy",
@@ -142,21 +148,6 @@
                                       "groupTitle":  "Postdoctoral Researchers",
                                       "members":  [
                                                       {
-                                                          "name":  "Himanshu Kumar, Ph.D.",
-                                                          "role":  "Postdoctoral Fellow",
-                                                          "photo":  "assets/sections/people/Himanshu Kumar.jpeg",
-                                                          "photoChill":  "assets/sections/people/Himanshi Kumar chill.jpeg",
-                                                          "description":  "I'm a Postdoctoral Fellow at Cleveland Clinic working at the intersection of neuroscience, signal processing, and machine learning. My research aims to decode brain dynamics from neural recordings to develop computational biomarkers for epilepsy. In my free time, I enjoy cooking, playing basketball, and traveling.",
-                                                          "links":  {
-                                                                        "website":  "https://himsriv24.github.io/",
-                                                                        "linkedin":  "https://www.linkedin.com/in/himanshu-kumar-ph-d-ba2298a7/",
-                                                                        "orcid":  "https://orcid.org/0000-0003-3255-4588",
-                                                                        "scholar":  "https://scholar.google.com/citations?user=rlqKrlwAAAAJ",
-                                                                        "x":  "https://x.com/_himanshu_sri",
-                                                                        "github":  "https://github.com/himsriv24"
-                                                                    }
-                                                      },
-                                                      {
                                                           "name":  "Guhan Seshadri, Ph.D.",
                                                           "role":  "Postdoctoral Fellow",
                                                           "photo":  "assets/sections/people/Guhan Seshadri.jpg",
@@ -213,7 +204,7 @@
                                                           "role":  "Research Intern",
                                                           "email":  "manleymg@miamioh.edu",
                                                           "affiliation":  "Miami University",
-                                                          "photo":  "assets/sections/people/Madelyn Manley.jpeg",
+                                                          "photo":  "assets/sections/people/Madelyn Manley.jpg",
                                                           "photoChill":  "assets/sections/people/Madelyn Manley chill.jpg",
                                                           "links":  {
                                                                         "linkedin":  "https://www.linkedin.com/in/madelyn-manley-534b49347/",
@@ -226,6 +217,18 @@
                                   {
                                       "groupTitle":  "Alumni",
                                       "members":  [
+                                                      {
+                                                          "name":  "Himanshu Kumar, Ph.D.",
+                                                          "role":  "Postdoctoral Fellow",
+                                                          "affiliation":  "Assistant Professor, Mehta Family School of Biosciences and Biomedical Engineering, IIT Indore",                                                          
+                                                          "links":  {
+                                                                        "website":  "https://himsriv24.github.io/",
+                                                                        "linkedin":  "https://www.linkedin.com/in/himanshu-kumar-ph-d-ba2298a7/",
+                                                                        "orcid":  "https://orcid.org/0000-0003-3255-4588",
+                                                                        "scholar":  "https://scholar.google.com/citations?user=rlqKrlwAAAAJ",                                                                        
+                                                                        "github":  "https://github.com/himsriv24"
+                                                                    }
+                                                      },
                                                       {
                                                           "name":  "Navya Nair",
                                                           "role":  "Undergraduate Research Intern",
