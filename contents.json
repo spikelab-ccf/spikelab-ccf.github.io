@@ -200,6 +200,18 @@
                                                                     }
                                                       },
                                                       {
+                                                          "name":  "Akshaj Satyawada",
+                                                          "role":  "Research Intern",
+                                                          "email":  "aswada25@engineering.upenn.edu",
+                                                          "affiliation":  "University of Pennsylvania",
+                                                          "photo":  "assets/sections/people/Akshaj Satyawada.jpg",
+                                                          "photoChill":  "assets/sections/people/Akshaj Satyawada chill.jpg",
+                                                          "links":  {
+                                                                        "linkedin":  "https://www.linkedin.com/in/akshaj-satyawada",
+                                                                        "github":  "https://github.com/25aswada"
+                                                                    }
+                                                      },
+                                                      {
                                                           "name":  "Madelyn Manley",
                                                           "role":  "Research Intern",
                                                           "email":  "manleymg@miamioh.edu",
@@ -248,15 +260,7 @@
                                                           "links":  {
                                                                         "linkedin":  "https://www.linkedin.com/in/navya-nair-/"
                                                                     }
-                                                      },
-                                                      {
-                                                          "name":  "Akshaj Satyawada",
-                                                          "role":  "High School Research Intern",
-                                                          "affiliation":  "University of Pennsylvania",
-                                                          "links":  {
-                                                                        "linkedin":  "https://www.linkedin.com/in/akshaj-satyawada/"
-                                                                    }
-                                                      },
+                                                      },                                                      
                                                       {
                                                           "name":  "Adam Halford",
                                                           "role":  "High School Research Intern",
